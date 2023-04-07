@@ -65,6 +65,37 @@
     </div>
 </footer>
 
+<!-- HTML -->
+<a href="https://wa.me/xxxxxxxxxx" class="whatsapp-float" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+</a>
+
+<!-- CSS -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    a.whatsapp-float:hover {
+        color: red;
+    }
+
+    .whatsapp-float i {
+        margin-top: 15px;
+    }
+</style>
+
 
 <script src="<?= base_url('assets/'); ?>js/jquery.min.js"></script>
 <script src="<?= base_url('assets/'); ?>js/bootstrap.bundle.min.js"></script>

@@ -42,25 +42,37 @@
                         <style>
                             .active {
                                 border-bottom: 2px solid red;
+                                color: red;
                             }
                         </style>
+                        <style>
+                            .navbar-nav .nav-link {
+                                font-weight: 500;
+                                color: #000;
+                            }
+
+                            .navbar-nav .nav-link:hover {
+                                color: red;
+                            }
+                        </style>
+
                         <li class="nav-item active">
-                            <a class="nav-link font-weight-semi-bold" href="<?= base_url(''); ?>">Beranda</a>
+                            <a class="nav-link" href="<?= base_url(''); ?>">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link font-weight-semi-bold" href="#">Tentang Kami</a>
+                            <a class="nav-link" href="#">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link font-weight-semi-bold" href="#">Portofolio</a>
+                            <a class="nav-link" href="#">Portofolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link font-weight-semi-bold" href="#">Produk</a>
+                            <a class="nav-link" href="#">Produk</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link font-weight-semi-bold" href="#">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link font-weight-semi-bold" href="#">Hubungi Kami</a>
+                            <a class="nav-link" href="#">Hubungi Kami</a>
                         </li>
                     </ul>
                 </div>
