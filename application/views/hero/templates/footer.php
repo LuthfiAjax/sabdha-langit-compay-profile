@@ -67,7 +67,7 @@
 
 <!-- HTML -->
 <a href="https://wa.me/xxxxxxxxxx" class="whatsapp-float" target="_blank">
-    <i class="fa fa-whatsapp"></i>
+    <i class="fab fa-whatsapp"></i>
 </a>
 
 <!-- CSS -->
@@ -93,6 +93,20 @@
 
     .whatsapp-float i {
         margin-top: 15px;
+    }
+
+    @media (max-width: 767px) {
+        .whatsapp-float {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 20px;
+            font-size: 20px;
+        }
+
+        .whatsapp-float i {
+            margin-top: 10px;
+        }
     }
 </style>
 

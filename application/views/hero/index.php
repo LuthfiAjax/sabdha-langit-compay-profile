@@ -231,73 +231,70 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="blog_box">
-                    <div class="blog_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/blog1.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="blog_room">
-                        <h3>Bed Room</h3>
-                        <span>The standard chunk </span>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog_box">
-                    <div class="blog_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/blog2.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="blog_room">
-                        <h3>Bed Room</h3>
-                        <span>The standard chunk </span>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="blog_box">
-                    <div class="blog_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/blog3.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="blog_room">
-                        <h3>Bed Room</h3>
-                        <span>The standard chunk </span>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are </p>
+            <style>
+                .h5 {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    font-size: small;
+                }
+
+                .desc {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                    text-align: justify;
+                }
+            </style>
+            <?php foreach ($blogs as $row) : ?>
+                <div class="col-md-4">
+                    <div class="blog_box">
+                        <div class="blog_img">
+                            <a href="<?= base_url('blog/' . $row['slug_id']); ?>">
+                                <figure><img src="<?= base_url('assets/images/articles/headers/' . $row['small_image']); ?>" alt="<?= $row['title_id']; ?>" /></figure>
+                            </a>
+                        </div>
+                        <div class="blog_room">
+                            <h3 class="h5 mb-2"><a href="<?= base_url('blog/' . $row['slug_id']); ?>"><?= $row['title_id']; ?></a></h3>
+                            <p class="desc"><?= $row['deskripsi']; ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
 
-<div class="contact">
+<div id="contact" class="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
                     <h2>Contact Us</h2>
+                    <?= $this->session->flashdata('message'); ?>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <form id="request" class="main_form">
+                <form id="request" class="main_form" method="post" action="<?= base_url('post/message'); ?>">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <input class="contactus" placeholder="Name" type="type" name="Name">
+                            <input class="contactus" placeholder="Nama" type="text" name="nama">
                         </div>
                         <div class="col-md-12">
-                            <input class="contactus" placeholder="Email" type="type" name="Email">
+                            <input class="contactus" placeholder="Email" type="email" name="email">
                         </div>
                         <div class="col-md-12">
-                            <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+                            <input class="contactus" placeholder="Nomor Handphone" type="number" name="tlp">
                         </div>
                         <div class="col-md-12">
-                            <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                            <textarea class="textarea" placeholder="Pesan" name="pesan" type="text"></textarea>
                         </div>
                         <div class="col-md-12">
-                            <button class="send_btn">Send</button>
+                            <button type="submit" class="send_btn">Send</button>
                         </div>
                     </div>
                 </form>

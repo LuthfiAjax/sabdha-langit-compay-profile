@@ -19,15 +19,19 @@
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/responsive.css">
     <link rel="icon" href="<?= base_url('assets/'); ?>images/logo/faveicon.png" type="image/png" />
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
 </head>
 
 <body class="main-layout">
-    <div class="loader_bg">
-        <div class="loader"><img src="<?= base_url('assets/'); ?>images/logo/logo-sabdha-langit.png" alt="Loading Images Sabdha Langit" /></div>
-    </div>
+
+    <?php if ($pages == 'beranda') : ?>
+        <div class="loader_bg">
+            <div class="loader"><img src="<?= base_url('assets/'); ?>images/logo/logo-sabdha-langit.png" alt="Loading Images Sabdha Langit" /></div>
+        </div>
+    <?php endif; ?>
+
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
@@ -56,22 +60,22 @@
                             }
                         </style>
 
-                        <li class="nav-item active">
+                        <li class="nav-item <?= ($pages == 'beranda') ? 'active' : '' ?>">
                             <a class="nav-link" href="<?= base_url(''); ?>">Beranda</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
                             <a class="nav-link" href="#">Tentang Kami</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
                             <a class="nav-link" href="#">Portofolio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
                             <a class="nav-link" href="#">Produk</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                        <li class="nav-item <?= ($pages == 'blog') ? 'active' : '' ?>">
+                            <a class="nav-link" href="<?= base_url('blog'); ?>">Blog</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
                             <a class="nav-link" href="#">Hubungi Kami</a>
                         </li>
                     </ul>

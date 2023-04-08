@@ -642,9 +642,9 @@ button {
 
 .blog .blog_box .blog_room h3 {
 	color: #121212;
-	font-size: 25px;
+	text-align: justify;
+	font-size: 20px;
 	line-height: 20px;
-	font-weight: 500;
 	padding-bottom: 5px;
 	transition: ease-in all 0.5s;
 	margin: auto;
