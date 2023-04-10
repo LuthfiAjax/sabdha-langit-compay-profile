@@ -20,6 +20,16 @@ class Hero extends CI_Controller
     $this->load->view('hero/templates/footer');
   }
 
+  public function blog()
+  {
+    $data['pages'] = 'blog';
+    $data['blogs'] = $this->db->select('title_id, slug_id, deskripsi, small_image, publish_date')->where('tampil', 1)->order_by('publish_date', 'DESC')->get('article')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/blog');
+    $this->load->view('hero/templates/footer');
+  }
+
   public function single_blog($slug)
   {
     $data['pages'] = 'blog';

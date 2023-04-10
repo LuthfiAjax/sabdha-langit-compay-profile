@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/responsive.css">
     <link rel="icon" href="<?= base_url('assets/'); ?>images/logo/faveicon.png" type="image/png" />
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
 </head>
@@ -70,7 +70,7 @@
                             <a class="nav-link" href="#">Portofolio</a>
                         </li>
                         <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
-                            <a class="nav-link" href="#">Produk</a>
+                            <a class="nav-link" href="#">Layanan</a>
                         </li>
                         <li class="nav-item <?= ($pages == 'blog') ? 'active' : '' ?>">
                             <a class="nav-link" href="<?= base_url('blog'); ?>">Blog</a>

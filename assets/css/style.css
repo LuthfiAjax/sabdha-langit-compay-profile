@@ -156,6 +156,7 @@ a,
 img {
 	max-width: 100%;
 	height: auto;
+	object-fit: cover;
 }
 
 :focus {
@@ -595,6 +596,7 @@ button {
 	background-size: 100% 100%;
 	padding: 60px 0 30px 0;
 	margin-top: 60px;
+	object-fit: cover;
 }
 
 .blog .titlepage {
