@@ -65,7 +65,7 @@
                                         <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
                                     </ol>
                                     <div role="listbox" class="carousel-inner">
-                                        <div class="item active"><img src="<?= base_url('assets/images/articles/headers/' . $blog->small_image); ?>" alt="Cover <?= $blog->title_id; ?>" class="img-responsive"></div>
+                                        <div class="item active"><img src="<?= base_url('assets/images/articles/headers/' . $blog->header_image); ?>" alt="Cover <?= $blog->title_id; ?>" class="img-responsive"></div>
                                     </div>
                                 </div>
                             </div>

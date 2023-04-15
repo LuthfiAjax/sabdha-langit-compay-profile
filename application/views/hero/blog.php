@@ -129,7 +129,7 @@
                 <div class="blog-item shadow">
                     <div class="image-wrap">
                         <a href="<?= base_url('blog/' . $row['slug_id']); ?>">
-                            <img src="<?= base_url('assets/images/articles/headers/' . $row['small_image']); ?>" alt="cover <?= $row['title_id']; ?>" class="img-fluid">
+                            <img src="<?= base_url('assets/images/articles/headers/' . $row['header_image']); ?>" alt="cover <?= $row['title_id']; ?>" class="img-fluid">
                         </a>
                     </div>
                     <div class="blog-content p-3">

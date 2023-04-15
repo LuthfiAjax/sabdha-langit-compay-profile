@@ -13,7 +13,7 @@ class Hero extends CI_Controller
   public function index()
   {
     $data['pages'] = 'beranda';
-    $data['blogs'] = $this->db->select('title_id, slug_id, deskripsi, small_image')->where('tampil', 1)->limit(3)->order_by('publish_date', 'DESC')->get('article')->result_array();
+    $data['blogs'] = $this->db->select('title_id, slug_id, deskripsi, header_image')->where('tampil', 1)->limit(3)->order_by('publish_date', 'DESC')->get('article')->result_array();
 
     $this->load->view('hero/templates/header', $data);
     $this->load->view('hero/index');
@@ -23,7 +23,7 @@ class Hero extends CI_Controller
   public function blog()
   {
     $data['pages'] = 'blog';
-    $data['blogs'] = $this->db->select('title_id, slug_id, deskripsi, small_image, publish_date')->where('tampil', 1)->order_by('publish_date', 'DESC')->get('article')->result_array();
+    $data['blogs'] = $this->db->select('title_id, slug_id, deskripsi, header_image, publish_date')->where('tampil', 1)->order_by('publish_date', 'DESC')->get('article')->result_array();
 
     $this->load->view('hero/templates/header', $data);
     $this->load->view('hero/blog');
@@ -33,7 +33,7 @@ class Hero extends CI_Controller
   public function single_blog($slug)
   {
     $data['pages'] = 'blog';
-    $data['blog'] = $this->db->select('title_id, slug_id, body_text, small_image, publish_date')->where('slug_id', $slug)->get('article')->row();
+    $data['blog'] = $this->db->select('title_id, slug_id, body_text, header_image, publish_date')->where('slug_id', $slug)->get('article')->row();
 
     $this->load->view('hero/templates/header', $data);
     $this->load->view('hero/single_blog');

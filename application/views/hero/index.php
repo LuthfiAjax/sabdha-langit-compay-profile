@@ -90,7 +90,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>Our Room</h2>
+                    <h2>Layanan Kami</h2>
                     <p>Lorem Ipsum available, but the majority have suffered </p>
                 </div>
             </div>
@@ -129,94 +129,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div id="serv_hover" class="room">
-                    <div class="room_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/room4.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div id="serv_hover" class="room">
-                    <div class="room_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/room5.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div id="serv_hover" class="room">
-                    <div class="room_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/room6.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
-                    </div>
-                </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <a class="btn btn-primary rounded" href="">Cek Selengkapnya</a>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="gallery">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titlepage">
-                    <h2>gallery</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery1.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery2.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery3.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery4.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery5.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery6.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery7.jpg" alt="#" /></figure>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="gallery_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/gallery8.jpg" alt="#" /></figure>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -252,8 +171,8 @@
                 <div class="col-md-4">
                     <div class="blog_box">
                         <div class="blog_img">
-                            <a href="<?= base_url('blog/' . $row['slug_id']); ?>">
-                                <figure><img src="<?= base_url('assets/images/articles/headers/' . $row['small_image']); ?>" alt="<?= $row['title_id']; ?>" /></figure>
+                            <a href="<?= base_url('blog/' . $row['header_image']); ?>">
+                                <figure><img src="<?= base_url('assets/images/articles/headers/' . $row['header_image']); ?>" alt="<?= $row['title_id']; ?>" /></figure>
                             </a>
                         </div>
                         <div class="blog_room">
