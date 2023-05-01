@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
+<?php
+date_default_timezone_set('Asia/Jakarta');
+?>
 
 <head>
     <meta charset="utf-8">
@@ -67,8 +70,8 @@
                         <li class="nav-item <?= ($pages == 'beranda') ? 'active' : '' ?>">
                             <a class="nav-link mx-2" href="<?= base_url(''); ?>">Beranda</a>
                         </li>
-                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
-                            <a class="nav-link mx-2" href="#">Tentang Kami</a>
+                        <li class="nav-item <?= ($pages == 'about') ? 'active' : '' ?>">
+                            <a class="nav-link mx-2" href="<?= base_url('tentang-kami'); ?>">Tentang Kami</a>
                         </li>
                         <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
                             <a class="nav-link mx-2" href="#">Layanan</a>

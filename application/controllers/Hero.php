@@ -30,6 +30,16 @@ class Hero extends CI_Controller
     $this->load->view('hero/templates/footer');
   }
 
+  public function about()
+  {
+    $data['pages'] = 'about';
+    $data['about'] = $this->db->get_where('about', ['id_about' => 1])->row();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/about');
+    $this->load->view('hero/templates/footer');
+  }
+
   public function single_blog($slug)
   {
     $data['pages'] = 'blog';

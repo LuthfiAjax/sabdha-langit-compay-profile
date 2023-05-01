@@ -5,17 +5,25 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+        <style>
+        #carosel {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        </style>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="first-slide" src="<?= base_url('assets/'); ?>images/banner1.jpg" alt="First slide">
-                <div class="container">
-                </div>
+                <img id="carosel" class="first-slide" src="<?= base_url('assets/'); ?>images/banner1.jpg"
+                    alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="second-slide" src="<?= base_url('assets/'); ?>images/banner2.jpg" alt="Second slide">
+                <img id="carosel" class="second-slide" src="<?= base_url('assets/'); ?>images/banner2.jpg"
+                    alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="third-slide" src="<?= base_url('assets/'); ?>images/banner3.jpg" alt="Third slide">
+                <img id="carosel" class="third-slide" src="<?= base_url('assets/'); ?>images/banner3.jpg"
+                    alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -75,7 +83,7 @@
                     <p>Sabdha Langit Indonesia adalah sebuah perusahaan Event Organizer yang berbasis di Grobogan, Jawa
                         Tengah. Perusahaan ini telah berpengalaman dalam mengelola berbagai jenis acara seperti expo,
                         bazaar, konser musik, launching produk, dan banyak lagi. </p>
-                    <a class="read_more" href="Javascript:void(0)"> Selengkapnya</a>
+                    <a class="read_more" href="<?= base_url('tentang-kami'); ?>"> Selengkapnya</a>
                 </div>
             </div>
             <div class="col-md-7">
@@ -93,7 +101,7 @@
             <div class="col-md-12">
                 <div class="titlepage">
                     <h2>Layanan Kami</h2>
-                    <p>Lorem Ipsum available, but the majority have suffered </p>
+                    <p>Kami menyediakan beberapa layanan dan penyewaan untuk keperluan event anda</p>
                 </div>
             </div>
         </div>
@@ -147,7 +155,7 @@
             <div class="col-md-12">
                 <div class="titlepage">
                     <h2>Blog</h2>
-                    <p>Lorem Ipsum available, but the majority have suffered </p>
+                    <p>blog dan berita tentang sabdha langit</p>
                 </div>
             </div>
         </div>
@@ -158,7 +166,7 @@
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
-                font-size: small;
+                font-size: 18px;
             }
 
             .desc {
@@ -168,20 +176,54 @@
                 overflow: hidden;
                 text-align: justify;
             }
+
+            .blog_box {
+                margin-bottom: 30px;
+            }
+
+            .blog_img {
+                position: relative;
+            }
+
+            .blog_img img {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+            }
+
+            .blog_img figcaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.6);
+                font-size: 14px;
+                text-align: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .blog_img:hover figcaption {
+                opacity: 1;
+            }
             </style>
             <?php foreach ($blogs as $row) : ?>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="blog_box">
                     <div class="blog_img">
-                        <a href="<?= base_url('blog/' . $row['header_image']); ?>">
-                            <figure><img
-                                    src="<?= base_url('assets/images/articles/headers/' . $row['header_image']); ?>"
-                                    alt="<?= $row['title_id']; ?>" /></figure>
+                        <a href="<?= base_url('blog/' . $row['slug_id']); ?>">
+                            <figure>
+                                <img src="<?= base_url('assets/images/articles/headers/' . $row['header_image']); ?>"
+                                    alt="<?= $row['title_id']; ?>" />
+                                <figcaption><?= $row['title_id']; ?></figcaption>
+                            </figure>
                         </a>
                     </div>
                     <div class="blog_room">
-                        <h3 class="h5 mb-2"><a
-                                href="<?= base_url('blog/' . $row['slug_id']); ?>"><?= $row['title_id']; ?></a></h3>
+                        <p class="h5 mb-2" style="font-size: 1rem; font-weight: bold;"><a
+                                href="<?= base_url('blog/' . $row['slug_id']); ?>"><?= $row['title_id']; ?></a></p>
                         <p class="desc"><?= $row['deskripsi']; ?></p>
                     </div>
                 </div>
@@ -190,6 +232,7 @@
         </div>
     </div>
 </div>
+
 
 <div id="contact" class="contact">
     <div class="container">

@@ -5,9 +5,14 @@
                 <div class="col-md-4">
                     <h3>Kontak</h3>
                     <ul class="list-group-horizontal text-left">
-                        <li class="list-group-horizontal-item text-white"><i class="fa fa-map-marker fa-fw me-1"></i> Jl. Pangeran Puger No.70, Grobogan, Kec. Grobogan, Kabupaten Grobogan, Jawa Tengah 58152</li>
-                        <li class="list-group-horizontal-item text-white"><i class="fa fa-phone fa-fw me-1"></i> (62) 821-3323-3777</li>
-                        <li class="list-group-horizontal-item text-white"><i class="fa fa-envelope fa-fw me-1"></i><a class="text-light" href="mailto:official@sabdhalangit.com"> official@sabdhalangit.com</a></li>
+                        <li class="list-group-horizontal-item text-white"><i class="fa fa-map-marker fa-fw me-1"></i>
+                            Jl. Pangeran Puger No.70, Grobogan, Kec. Grobogan, Kabupaten Grobogan, Jawa Tengah 58152
+                        </li>
+                        <li class="list-group-horizontal-item text-white"><i class="fa fa-phone fa-fw me-1"></i>
+                            (62) 821-3323-3777</li>
+                        <li class="list-group-horizontal-item text-white"><i class="fa fa-envelope fa-fw me-1"></i><a
+                                class="text-light" href="mailto:official@sabdhalangit.com">
+                                official@sabdhalangit.com</a></li>
                     </ul>
                 </div>
 
@@ -20,9 +25,6 @@
                             </li>
                             <li class="list-group-horizontal-item">
                                 <a class="text-light" href="#">Tentang Kami</a>
-                            </li>
-                            <li class="list-group-horizontal-item">
-                                <a class="text-light" href="#">Portofolio</a>
                             </li>
                             <li class="list-group-horizontal-item">
                                 <a class="text-light" href="#">Layanan</a>
@@ -43,10 +45,14 @@
                         <button class="btn btn-danger ml-3">Ikuti</button>
                     </form>
                     <ul class="list-unstyled social_icon mt-2">
-                        <li><a target="_blank" href="https://www.facebook.com/sabdha.langit.14"><i class="fab fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="https://www.tiktok.com/@sabdhalangit"><i class="fab fa-tiktok"></i></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/@SABDHALANGIT"><i class="fab fa-youtube"></i></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/sabdhalangit/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/sabdha.langit.14"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.tiktok.com/@sabdhalangit"><i
+                                    class="fab fa-tiktok"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/@SABDHALANGIT"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/sabdhalangit/"><i
+                                    class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +63,8 @@
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <p class="text-center mb-0 py-3">
-                        © <?= date('Y'); ?> All Rights Reserved. <a href="<?= base_url(''); ?>" class="text-danger">cv. sabdha langit indonesia</a>
+                        © <?= date('Y'); ?> All Rights Reserved. <a href="<?= base_url(''); ?>" class="text-danger">cv.
+                            sabdha langit indonesia</a>
                     </p>
                 </div>
             </div>
@@ -71,7 +78,8 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 </div>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -116,92 +124,92 @@
 
 <!-- CSS -->
 <style>
-    .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 30px;
-        right: 30px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-    }
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
 
-    .whatsapp-float:hover {
-        background-color: #128c7e;
-        color: #fff;
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    color: #fff;
+}
+
+.whatsapp-float i {
+    margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .whatsapp-float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
     }
 
     .whatsapp-float i {
-        margin-top: 15px;
+        margin-top: 10px;
     }
+}
 
-    @media (max-width: 767px) {
-        .whatsapp-float {
-            width: 40px;
-            height: 40px;
-            bottom: 20px;
-            right: 20px;
-            font-size: 20px;
-        }
+.modal-header {
+    background-color: #E94048;
+    color: white;
+    font-weight: bold;
+}
 
-        .whatsapp-float i {
-            margin-top: 10px;
-        }
-    }
+.modal-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
 
-    .modal-header {
-        background-color: #E94048;
-        color: white;
-        font-weight: bold;
-    }
+.modal-body {
+    background-color: #f5f5f5;
+}
 
-    .modal-title {
-        margin: 0;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        color: #fff;
-    }
+.form-control {
+    border: 2px solid #d9d9d9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 10px;
+}
 
-    .modal-body {
-        background-color: #f5f5f5;
-    }
+.form-control:focus {
+    border: 2px solid #002651;
+    outline: none;
+}
 
-    .form-control {
-        border: 2px solid #d9d9d9;
-        border-radius: 4px;
-        box-sizing: border-box;
-        height: 50px;
-        margin-bottom: 10px;
-    }
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
-    .form-control:focus {
-        border: 2px solid #002651;
-        outline: none;
-    }
+.modal-footer button {
+    font-weight: bold;
+}
 
-    .form-group label {
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+}
 
-    .modal-footer button {
-        font-weight: bold;
-    }
-
-    .btn-danger {
-        background-color: #d9534f;
-        border: none;
-    }
-
-    .btn-danger:hover {
-        background-color: #c9302c;
-    }
+.btn-danger:hover {
+    background-color: #c9302c;
+}
 </style>
 
 
