@@ -73,7 +73,7 @@
         <div class="carousel-item active">
             <img src="<?= base_url('assets/images/blog_bg.jpg'); ?>" alt="Article Image">
             <div class="carousel-caption">
-                <h2>Blogs Sabdha Langit</h2>
+                <h2>Layanan Sabdha Langit</h2>
                 <form class="form-inline mt-4">
                     <div class="input-group">
                         <input type="text" class="form-control border-right-0" placeholder="Search" aria-label="Search">
@@ -169,30 +169,23 @@
 
 <div class="container py-5">
     <div class="row">
-        <?php foreach ($blogs as $row) : ?>
+        <?php foreach ($layanan as $row) : ?>
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="blog-item">
                 <div class="image-wrap">
-                    <a href="<?= base_url('blog/' . $row['slug_id']); ?>">
-                        <img src="<?= base_url('assets/images/articles/headers/' . $row['header_image']); ?>"
-                            alt="cover <?= $row['title_id']; ?>" class="img-fluid">
+                    <a href="<?= base_url('layanan/' . $row['slug']); ?>">
+                        <img src="<?= base_url('assets/images/layanan/' . $row['cover']); ?>"
+                            alt="cover <?= $row['title_layanan']; ?>" class="img-fluid">
                     </a>
                 </div>
                 <div class="blog-content p-3">
-                    <ul class="blog-meta">
-                        <li class="date"><i class="fa fa-calendar-check-o"></i>
-                            <?php
-                            $this->load->library('indonesian_date');
-                            ?>
-                            <?= $this->indonesian_date->format_date($row['publish_date']); ?></li>
-                    </ul>
-                    <h2 class="blog-title">
-                        <a href="<?= base_url('blog/' . $row['slug_id']); ?>"><?= $row['title_id']; ?></a>
+                    <h2 class="blog-title mb-3">
+                        <a href="<?= base_url('layanan/' . $row['slug']); ?>"><?= $row['title_layanan']; ?></a>
                     </h2>
-                    <p class="desc"><?= $row['deskripsi']; ?></p>
-                    <div class="blog-button mt-2 d-flex justify-content-end">
-                        <a class="btn btn-outline-danger rounded"
-                            href="<?= base_url('blog/' . $row['slug_id']); ?>">Selengkapnya</a>
+                    <p class="desc mb-3"><?= $row['deskripsi']; ?></p>
+                    <div class="blog-button mt-2 d-flex justify-content-center">
+                        <a class="btn btn-outline-primary rounded"
+                            href="<?= base_url('layanan/' . $row['slug']); ?>">Selengkapnya</a>
                     </div>
                 </div>
             </div>

@@ -73,8 +73,8 @@ date_default_timezone_set('Asia/Jakarta');
                         <li class="nav-item <?= ($pages == 'about') ? 'active' : '' ?>">
                             <a class="nav-link mx-2" href="<?= base_url('tentang-kami'); ?>">Tentang Kami</a>
                         </li>
-                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
-                            <a class="nav-link mx-2" href="#">Layanan</a>
+                        <li class="nav-item <?= ($pages == 'layanan') ? 'active' : '' ?>">
+                            <a class="nav-link mx-2" href="<?= base_url('layanan'); ?>">Layanan</a>
                         </li>
                         <li class="nav-item <?= ($pages == 'blog') ? 'active' : '' ?>">
                             <a class="nav-link mx-2" href="<?= base_url('blog'); ?>">Blog</a>

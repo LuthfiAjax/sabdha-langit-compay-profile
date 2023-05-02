@@ -9,5 +9,6 @@ $route['blog'] = 'hero/blog';
 $route['blog/(:any)'] = 'hero/single_blog/$1';
 
 $route['tentang-kami'] = 'hero/about';
+$route['layanan'] = 'hero/layanan';
 
 $route['post/message'] = 'hero/message';

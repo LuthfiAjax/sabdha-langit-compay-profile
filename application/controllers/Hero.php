@@ -30,6 +30,16 @@ class Hero extends CI_Controller
     $this->load->view('hero/templates/footer');
   }
 
+  public function layanan()
+  {
+    $data['pages'] = 'layanan';
+    $data['layanan'] = $this->db->select('*')->order_by('title_layanan', 'DESC')->get('layanan')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/layanan');
+    $this->load->view('hero/templates/footer');
+  }
+
   public function about()
   {
     $data['pages'] = 'about';
