@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 
-$config['base_url'] = 'http://localhost/sabdhalangit/';
+$config['base_url'] = 'http://localhost/sabdha-langit/';
 
 $config['index_page'] = 'index.php';
 

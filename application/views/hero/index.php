@@ -8,7 +8,7 @@
         <style>
         #carosel {
             object-fit: cover;
-            height: 100%;
+            height: 110%;
             width: 100%;
         }
         </style>
@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <select class="online_book" name="purpose">
-                                        <option selected disabled>Pilih Pertanyaan</option>
+                                        <option selected disabled>Layanan</option>
                                         <option class="text-dark" value="Vacation">Event Organizer</option>
                                         <option class="text-dark" value="Business Trip">Sewa Panggung</option>
                                         <option class="text-dark" value="Wedding">Foto prewedding</option>
@@ -80,15 +80,13 @@
             <div class="col-md-5">
                 <div class="titlepage">
                     <h2>Tentang Kami</h2>
-                    <p>Sabdha Langit Indonesia adalah sebuah perusahaan Event Organizer yang berbasis di Grobogan, Jawa
-                        Tengah. Perusahaan ini telah berpengalaman dalam mengelola berbagai jenis acara seperti expo,
-                        bazaar, konser musik, launching produk, dan banyak lagi. </p>
-                    <a class="read_more" href="<?= base_url('tentang-kami'); ?>"> Selengkapnya</a>
+                    <p class="text-justify">CV. Sabdha Langit Indonesia merupakan unit usaha yang dilahirkan dari Yayasan Bakti Indonesia. Berawal dari sebuah keinginan untuk membawa anak-anak muda, baik para warga belajar pendidikan non formal, maupun masyarakat di sekitar Yayasan, untuk dapat memiliki keahlian, keterampilan, serta produktivitas sehingga mampu mengurangi angka pengangguran yang berdampak pada pengembangan Yayasan menuju kemandirian tanpa tergantung dari bantuan pemerintah maupun swasta.</p>
+                    <a class="btn btn-danger rounded" href="<?= base_url('tentang-kami'); ?>"> Tentang Kami</a>
                 </div>
             </div>
             <div class="col-md-7">
                 <div class="about_img">
-                    <figure><img src="<?= base_url('assets/'); ?>images/about.png" alt="#" /></figure>
+                    <figure><img src="<?= base_url('assets/'); ?>images/about.jpg" alt="Tentang Sabdha Langit" /></figure>
                 </div>
             </div>
         </div>
@@ -106,173 +104,166 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/room1.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <figure><img src="<?= base_url('assets/'); ?>images/layanan/eo.jpg" alt="Layanan Sabdha Langit Indonesia" /></figure>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/room2.jpg" alt="#" /></figure>
-                    </div>
-                    <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                        <figure><img src="<?= base_url('assets/'); ?>images/layanan/multimedia.jpg" alt="Layanan Sabdha Langit Indonesia" /></figure>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="<?= base_url('assets/'); ?>images/room3.jpg" alt="#" /></figure>
+                        <figure><img src="<?= base_url('assets/'); ?>images/layanan/property.jpg" alt="Layanan Sabdha Langit Indonesia" /></figure>
                     </div>
-                    <div class="bed_room">
-                        <h3>Bed Room</h3>
-                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div id="serv_hover" class="room">
+                    <div class="room_img">
+                        <figure><img src="<?= base_url('assets/'); ?>images/layanan/photografi.jpg" alt="Layanan Sabdha Langit Indonesia" /></figure>
                     </div>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
             <div class="row">
-                <a class="btn btn-primary rounded" href="">Cek Selengkapnya</a>
+                <a class="btn btn-danger rounded" href="<?= base_url('layanan'); ?>">Lihat Layanan</a>
             </div>
         </div>
-
     </div>
 </div>
 
-<div class="blog">
+<div class="our_room bg-white">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>Blog</h2>
-                    <p>blog dan berita tentang sabdha langit</p>
+                    <h2>PENGHARGAAN</h2>
+                    <p>Beberapa Penghargaan yang kami dapatkan</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <style>
-            .h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
-                overflow: hidden;
-                font-size: 18px;
-            }
-
-            .desc {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                overflow: hidden;
-                text-align: justify;
-            }
-
-            .blog_box {
-                margin-bottom: 30px;
-            }
-
-            .blog_img {
-                position: relative;
-            }
-
-            .blog_img img {
-                width: 100%;
-                height: auto;
-                border-radius: 4px;
-            }
-
-            .blog_img figcaption {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                padding: 10px;
-                color: #fff;
-                background: rgba(0, 0, 0, 0.6);
-                font-size: 14px;
-                text-align: center;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
-
-            .blog_img:hover figcaption {
-                opacity: 1;
-            }
-            </style>
-            <?php foreach ($blogs as $row) : ?>
+        <div class="row d-flex justify-content-center">
             <div class="col-md-4 col-sm-6">
-                <div class="blog_box">
-                    <div class="blog_img">
-                        <a href="<?= base_url('blog/' . $row['slug_id']); ?>">
-                            <figure>
-                                <img src="<?= base_url('assets/images/articles/headers/' . $row['header_image']); ?>"
-                                    alt="<?= $row['title_id']; ?>" />
-                                <figcaption><?= $row['title_id']; ?></figcaption>
-                            </figure>
-                        </a>
+                <div id="serv_hover" class="room bg-light">
+                    <div class="room_img">
+                        <figure><img src="<?= base_url('assets/'); ?>images/penghargaan/metrotv.jpg" alt="penghargaan sabdha langit" /></figure>
                     </div>
-                    <div class="blog_room">
-                        <p class="h5 mb-2" style="font-size: 1rem; font-weight: bold;"><a
-                                href="<?= base_url('blog/' . $row['slug_id']); ?>"><?= $row['title_id']; ?></a></p>
-                        <p class="desc"><?= $row['deskripsi']; ?></p>
+                    <div class="bed_room">
+                        <p>Narasumber  Kick Andy Metro TV </p>
                     </div>
                 </div>
             </div>
-            <?php endforeach; ?>
+            <div class="col-md-4 col-sm-6">
+                <div id="serv_hover" class="room bg-light">
+                    <div class="room_img">
+                        <figure><img src="<?= base_url('assets/'); ?>images/penghargaan/ngarit.jpg" alt="penghargaan sabdha langit" /></figure>
+                    </div>
+                    <div class="bed_room">
+                        <p>Video Terbaik MPR RI Fraksi PPP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div id="serv_hover" class="room bg-light">
+                    <div class="room_img">
+                        <figure><img src="<?= base_url('assets/'); ?>images/penghargaan/trisakti.jpg" alt="penghargaan sabdha langit" /></figure>
+                    </div>
+                    <div class="bed_room">
+                        <p>Trisakti Tourism Award Terfavorit 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div id="serv_hover" class="room bg-light">
+                    <div class="room_img">
+                        <figure><img src="<?= base_url('assets/'); ?>images/penghargaan/berserahdiri.jpg" alt="penghargaan sabdha langit" /></figure>
+                    </div>
+                    <div class="bed_room">
+                        <p>Video Terbaik DJ Vlog Competition 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div id="serv_hover" class="room bg-light">
+                    <div class="room_img">
+                        <figure><img src="<?= base_url('assets/'); ?>images/penghargaan/pdip.jpg" alt="penghargaan sabdha langit" /></figure>
+                    </div>
+                    <div class="bed_room">
+                        <p>Video Terbaik DPP PDI Perjuangan </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-
-<div id="contact" class="contact">
+<div class="about bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-7">
+                <div class="about_img">
+                    <figure><img src="<?= base_url('assets/'); ?>images/visimisi.jpg" alt="#" /></figure>
+                </div>
+            </div>
+            <div class="col-md-5">
                 <div class="titlepage">
-                    <h2>Contact Us</h2>
-                    <?= $this->session->flashdata('message'); ?>
+                    <h2 class="fs-3 fw-bold mb-1">Visi</h2>
+                    <p class="text-justify">Terwujudnya perusahaan pelayanan jasa di bidang industri kreatif yang inovatif, kreatif dan terpercaya.</p>
+                </div>
+                <div class="titlepage">
+                    <h2 class="fs-3 fw-bold mb-1">Misi</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-justify">
+                            <span class="fw-bold"><i class="fas fa-stop mx-2"></i>Memberikan layanan terbaik kepada customer adalah prioritas utama</span>
+                        </li>
+                        <li class="mb-2 text-justify">
+                            <span class="fw-bold"><i class="fas fa-stop mx-2"></i>Memberikan potensi sumber daya manusia yang terampil, kreatif dan inovatif</span>
+                        </li>
+                        <li class="mb-2 text-justify">
+                            <span class="fw-bold"><i class="fas fa-stop mx-2"></i>Memberikan fasilitas terbaik untuk semua layanan</span>
+                        </li>
+                        <li class="mb-2 text-justify">
+                            <span class="fw-bold"><i class="fas fa-stop mx-2"></i>Menjaga Tanggung Jawab dan Keharmonisan dalam Tim</span>
+                        </li>
+                        <li class="mb-2 text-justify">
+                            <span class="fw-bold"><i class="fas fa-stop mx-2"></i>Mewujudkan perusahaan yang dikenal khalayak luas dengan tagline <b>Everywhere</b></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="our_room bg-white">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <form id="request" class="main_form" method="post" action="<?= base_url('post/message'); ?>">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <input class="contactus" placeholder="Nama" type="text" name="nama">
-                        </div>
-                        <div class="col-md-12">
-                            <input class="contactus" placeholder="Email" type="email" name="email">
-                        </div>
-                        <div class="col-md-12">
-                            <input class="contactus" placeholder="Nomor Handphone" type="number" name="tlp">
-                        </div>
-                        <div class="col-md-12">
-                            <textarea class="textarea" placeholder="Pesan" name="pesan" type="text"></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="send_btn">Send</button>
-                        </div>
-                    </div>
-                </form>
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Sabdha Langit TIM</h2>
+                    <p>Sabdha Langit TIM: Tim kreatif berbakat, inspiratif, dan inovatif di seni dan desain. Kolaborasi luar biasa, hasil tak terlupakan.</p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="map_main">
-                    <div class="map-responsive">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.8652063315362!2d110.91876687515861!3d-7.025126292976601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70b748c90b7371%3A0x8047ad129c4a7f98!2sJl.%20Pangeran%20Puger%20No.70%2C%20Grobogan%2C%20Kec.%20Grobogan%2C%20Kabupaten%20Grobogan%2C%20Jawa%20Tengah%2058152!5e0!3m2!1sid!2sid!4v1680808315952!5m2!1sid!2sid"
-                            width="auto" height="400" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+        </div>
+        <div class="slick_single_page">
+            <div class="slick_slider">
+                <div class="slick_item mx-1">
+                    <img src="<?= base_url('assets/'); ?>images/team/1.jpeg" alt="Sabdha Langit Indonesia TIM" style="width: 500px; height: 350px; object-fit: cover;">
+                </div>
+                <div class="slick_item mx-1">
+                    <img src="<?= base_url('assets/'); ?>images/team/2.jpeg" alt="Sabdha Langit Indonesia TIM" style="width: 500px; height: 350px; object-fit: cover;">
+                </div>
+                <div class="slick_item mx-1">
+                    <img src="<?= base_url('assets/'); ?>images/team/3.jpeg" alt="Sabdha Langit Indonesia TIM" style="width: 500px; height: 350px; object-fit: cover;">
                 </div>
             </div>
         </div>
