@@ -9,7 +9,7 @@
                             Jl. Pangeran Puger No.70, Grobogan, Kec. Grobogan, Kabupaten Grobogan, Jawa Tengah 58152
                         </li>
                         <li class="list-group-horizontal-item text-white"><i class="fa fa-phone fa-fw me-1"></i>
-                            (62) 821-3323-3777</li>
+                            (62) 081390331133</li>
                         <li class="list-group-horizontal-item text-white"><i class="fa fa-envelope fa-fw me-1"></i><a
                                 class="text-light" href="mailto:official@sabdhalangit.com">
                                 official@sabdhalangit.com</a></li>

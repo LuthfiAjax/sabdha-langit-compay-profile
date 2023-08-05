@@ -30,6 +30,7 @@ class Hero extends CI_Controller
     $this->load->view('hero/templates/footer');
   }
 
+  // Layanan
   public function layanan()
   {
     $data['pages'] = 'layanan';
@@ -39,6 +40,47 @@ class Hero extends CI_Controller
     $this->load->view('hero/layanan');
     $this->load->view('hero/templates/footer');
   }
+
+  public function event_organizer()
+  {
+    $data['pages'] = 'layanan';
+    $data['layanan'] = $this->db->select('*')->order_by('title_layanan', 'DESC')->get('layanan')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/layanan/event_organizer');
+    $this->load->view('hero/templates/footer');
+  }
+
+  public function multimedia()
+  {
+    $data['pages'] = 'layanan';
+    $data['layanan'] = $this->db->select('*')->order_by('title_layanan', 'DESC')->get('layanan')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/layanan/multimedia');
+    $this->load->view('hero/templates/footer');
+  }
+
+  public function property_event()
+  {
+    $data['pages'] = 'layanan';
+    $data['layanan'] = $this->db->select('*')->order_by('title_layanan', 'DESC')->get('layanan')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/layanan/property_event');
+    $this->load->view('hero/templates/footer');
+  }
+
+  public function photography()
+  {
+    $data['pages'] = 'layanan';
+    $data['layanan'] = $this->db->select('*')->order_by('title_layanan', 'DESC')->get('layanan')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/layanan/photography');
+    $this->load->view('hero/templates/footer');
+  }
+  // Layanan End
 
   public function about()
   {
@@ -57,6 +99,16 @@ class Hero extends CI_Controller
 
     $this->load->view('hero/templates/header', $data);
     $this->load->view('hero/single_blog');
+    $this->load->view('hero/templates/footer');
+  }
+
+  public function hubungi()
+  {
+    $data['pages'] = 'hubungi';
+    $data['layanan'] = $this->db->select('*')->order_by('title_layanan', 'DESC')->get('layanan')->result_array();
+
+    $this->load->view('hero/templates/header', $data);
+    $this->load->view('hero/hubungi');
     $this->load->view('hero/templates/footer');
   }
 

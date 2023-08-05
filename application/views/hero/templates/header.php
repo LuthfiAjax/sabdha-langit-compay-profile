@@ -79,8 +79,8 @@ date_default_timezone_set('Asia/Jakarta');
                         <li class="nav-item <?= ($pages == 'blog') ? 'active' : '' ?>">
                             <a class="nav-link mx-2" href="<?= base_url('blog'); ?>">Blog</a>
                         </li>
-                        <li class="nav-item <?= ($pages == '') ? 'active' : '' ?>">
-                            <a class="nav-link mx-2" href="#">Hubungi</a>
+                        <li class="nav-item <?= ($pages == 'hubungi') ? 'active' : '' ?>">
+                            <a class="nav-link mx-2" href="<?= base_url('hubungi'); ?>">Hubungi</a>
                         </li>
                     </ul>
                 </div>
